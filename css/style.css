@@ -150,11 +150,11 @@ nav.scrolled {
 }
 
 .hero-logo-wrap {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .hero-logo-img {
-  width: clamp(260px, 45vw, 500px);
+  width: clamp(300px, 50vw, 560px);
   height: auto;
   border-radius: 50%;
   display: block;
@@ -172,7 +172,8 @@ nav.scrolled {
   min-height: 700px;
   position: relative;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -199,8 +200,13 @@ nav.scrolled {
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 0 60px 80px;
-  max-width: 900px;
+  padding: 100px 40px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
 }
 
 .hero-eyebrow {
@@ -211,6 +217,7 @@ nav.scrolled {
   margin-bottom: 16px;
   opacity: 0;
   animation: fadeUp 0.8s ease 0.3s forwards;
+  text-align: center;
 }
 
 .hero-title {
@@ -237,7 +244,7 @@ nav.scrolled {
 }
 
 .hero-sub {
-  margin-top: 30px;
+  margin-top: 20px;
   font-family: 'Crimson Text', serif;
   font-style: italic;
   font-size: 1.2rem;
@@ -245,14 +252,16 @@ nav.scrolled {
   max-width: 500px;
   opacity: 0;
   animation: fadeUp 0.8s ease 0.8s forwards;
+  text-align: center;
 }
 
 .hero-cta {
-  margin-top: 40px;
+  margin-top: 36px;
   display: flex;
   gap: 20px;
   opacity: 0;
   animation: fadeUp 0.8s ease 1s forwards;
+  justify-content: center;
 }
 
 .btn-primary {
