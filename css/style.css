@@ -135,7 +135,38 @@ nav.scrolled {
 .hamburger.active span:nth-child(2) { opacity: 0; }
 .hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ─── HERO ─── */
+.nav-logo-img {
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(139,0,0,0.5);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.nav-logo-img:hover {
+  border-color: var(--crimson);
+  box-shadow: 0 0 16px rgba(192,57,43,0.5);
+}
+
+.hero-logo-wrap {
+  margin-bottom: 10px;
+}
+
+.hero-logo-img {
+  width: clamp(260px, 45vw, 500px);
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  filter: drop-shadow(0 0 40px rgba(192,57,43,0.5)) drop-shadow(0 0 80px rgba(139,0,0,0.3));
+  transition: filter 0.4s;
+}
+
+.hero-logo-img:hover {
+  filter: drop-shadow(0 0 60px rgba(220,80,40,0.7)) drop-shadow(0 0 100px rgba(180,30,0,0.4));
+}
+
+
 #hero {
   height: 100vh;
   min-height: 700px;
